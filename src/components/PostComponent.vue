@@ -52,7 +52,7 @@ export default {
       const titleHasChanged = this.post.title !== event.currentTarget.title.value  
       const bodyHasChanged = this.post.body !== event.currentTarget.body.value
       const formValid = event.currentTarget.checkValidity() === true
-      debugger
+       
 
       if ((titleHasChanged || bodyHasChanged) && formValid){
         editedPost.title = event.currentTarget.title.value  

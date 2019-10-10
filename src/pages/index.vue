@@ -44,7 +44,7 @@ export default {
       
       let postResp
 
-      debugger
+       
 
       try {
         // Using POST doesn't work. Will give a 404 because no POST endpoint for the current resource has been set up.
@@ -69,7 +69,7 @@ export default {
         const foundPost = this.posts.find( p => p.id === editedPost.id)
         const indexOfPost = this.posts.indexOf(foundPost)
 
-        debugger
+         
         //replace post
         this.posts.splice(indexOfPost, 1, editedPost)
       }
