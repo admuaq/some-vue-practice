@@ -1,4 +1,4 @@
-# todo
+# practice
 
 ## Project setup
 ```
