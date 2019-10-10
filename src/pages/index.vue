@@ -16,6 +16,7 @@ import axios from 'axios'
 import Post from "@/components/PostComponent.vue"
 
 export default {
+  /* eslint-disable */
   data: function () {
     return {
       posts: []

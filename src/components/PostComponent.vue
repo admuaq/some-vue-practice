@@ -51,18 +51,14 @@ export default {
       if ((titleHasChanged || bodyHasChanged) && formValid){
         editedPost.title = event.currentTarget.title.value  
         editedPost.body = event.currentTarget.body.value
-        let result = this.$emit('editPost', editedPost)
-        console.log(result)
+        this.$emit('editPost', editedPost)
       }
     }
   },
   watch:{
-    post(newVal, oldVal){
+    post(){
       this.toggleDisabled()
     }
-  },
-  updated(){
-    console.log('updated')
   }
 }
 </script>
