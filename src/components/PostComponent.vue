@@ -1,7 +1,5 @@
 <template>
   <div class="container">
-    <!-- <input type="text" class="text-field" :value="post.title" :disabled="isDisabled" @blur="saveEdit" > -->
-    <!-- <span>{{ post }}</span> -->
     <div class="content">
       <form @submit.prevent="saveEdit" method="POST" action="#">
         <label for="title">Title:</label>
@@ -10,8 +8,6 @@
           :value="post.title"
           :disabled="isDisabled"
           required>
-          <!-- <h5 type="text" class="text-field" :disabled="isDisabled" >{{post.title}}</h5> -->
-        <!-- </div> -->
         <label for="body">Content:</label>
         <textarea 
           name="body" 
@@ -45,8 +41,6 @@ export default {
     },
     saveEdit(event){
       const editedPost = { ... this.post }
-      // editedPost.title = event.currentTarget.title.value  
-      // editedPost.body = event.currentTarget.body.value
 
       // compare changes
       const titleHasChanged = this.post.title !== event.currentTarget.title.value  
@@ -82,7 +76,6 @@ export default {
     width: fit-content;
     display: inline-flex;
     line-height: inherit;
-    /* justify-content: center; */
  }
 
  .title{
@@ -99,7 +92,6 @@ export default {
     display: block;
     width: 100%;
     height: -webkit-fill-available;
-  /* height: 241px; */
  }
 
   input {
